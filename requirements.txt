@@ -1,0 +1,4 @@
+numpy>=1.23
+scipy>=1.9
+matplotlib>=3.5
+# otilib must supply a compatible compiled pyoti.sparse extension; see README.md.
