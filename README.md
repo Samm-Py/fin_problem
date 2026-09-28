@@ -4,9 +4,7 @@ Python implementation of the analytical solution in Balcer et al.,
 *HYPAD-UQ: A Derivative-Based Uncertainty Quantification Method Using a
 Hypercomplex Finite Element Method*, J. Verif. Valid. Uncert. 8(2), 021002 (2023),
 [DOI: 10.1115/1.4062459](https://doi.org/10.1115/1.4062459).
-Equations (69)–(71) and Table 1 were checked against the supplied PDF:
-`C:\Users\Rober\Downloads\vvuq_008_02_021002.pdf`
-(accessible here at `/mnt/c/Users/Rober/Downloads/vvuq_008_02_021002.pdf`).
+The implementation follows Equations (69)–(71) and Table 1.
 
 The quantity of interest is **temperature in kelvin at a specified time**, at
 the insulated fin tip by default. The active-subspace calculation is an
