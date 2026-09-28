@@ -1,7 +1,7 @@
 # Validation and example runs
 
-Checked on 2026-09-28 using `/root/anaconda3/envs/jetgp/bin/python`
-(Python 3.9, NumPy/SciPy, the existing compiled `pyoti.sparse` extension).
+Checked on 2026-09-28 using Python 3.9, NumPy/SciPy, and a compiled
+`pyoti.sparse` extension.
 
 `python -m unittest -v test_fin.py`: **8 tests passed**.
 The suite includes OTI vs. complex-step sensitivities, an independent

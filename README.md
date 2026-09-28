@@ -12,16 +12,12 @@ extension of the paper's example; it is not a reproduction of its Sobol' indices
 
 ## Run
 
-In the current workspace, the `jetgp` environment already provides a working
-`pyoti.sparse` build from otilib:
+Use any Python environment with `pyoti.sparse` available and the dependencies
+listed below. From the repository directory, run:
 
 ```bash
-cd /root/fin_problem
 python run.py --time 35 --case both --plot
 ```
-
-If your shell selects another Python interpreter, use
-`/root/anaconda3/envs/jetgp/bin/python` in place of `python`.
 
 ```bash
 # Prompt for time; compute both cases
@@ -52,13 +48,11 @@ replaces its result files; use `--output` to retain sampling comparisons.
 
 Dependencies are NumPy, SciPy, and Matplotlib (only needed for plots), plus
 otilib's compiled **`pyoti.sparse`** module. `requirements.txt` lists the ordinary
-Python dependencies. Otilib must be installed separately for the Python/NumPy
-version you use; installing an unrelated package named `otilib` is not a substitute.
-An existing otilib build can be exposed with
+Python dependencies. Ensure a compatible copy of `pyoti` is importable in your
+chosen environment. An existing otilib build can be exposed with
 `PYTHONPATH=/path/to/otilib/build python run.py --time 35`.
 The code uses OTI first-order numbers for every production sensitivity and does
-not fall back to finite differences. The local tested extension is under
-`/root/Research/jetgp_2/otilib-master/build/pyoti`.
+not fall back to finite differences.
 
 ## Analytical model
 
